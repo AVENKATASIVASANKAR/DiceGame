@@ -19,7 +19,7 @@ image2.setAttribute("src",randomDicesource);
 if (randomNumber1 > randomNumber2){
     document.querySelector("h1").innerHTML="Player1 won";
 }
-if (randomNumber2 > randomNumber1){
+else if (randomNumber2 > randomNumber1){
     document.querySelector("h1").innerHTML="player2 won";
 }
 else{
