@@ -21,21 +21,27 @@ h1{
 label{
     color:#FA4EAB;
 }
+.container{
+    padding-left: 5%;
+}
+.v1{
+    border-left: 6px solid red;
+    height:100%;
+}
 </style>
 
     <title>DICE GAME</title>
 </head>
 <body style="background-color:#085E7D">
-
+    <h1>Play Game</h1>
     <div class="container">
-        <h1>Refresh me</h1>
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <button type="button" class="btn btn-success"  onclick="callname()" value = "Display";>player 1 name</button>
+                    <button type="button" class="btn btn-success"  onclick="callname()" value = "Display";>Click For Player1's Name</button>
                 </div>   
                 <div class="col-sm-6">
-                    <button type="button" class="btn btn-success"  onclick="callname2()" value = "Display";>player 2 name</button>
+                    <button type="button" class="btn btn-success"  onclick="callname2()" value = "Display";>Click For Player2's Name</button>
                 </div>         
             </div>
         </div>
@@ -47,14 +53,23 @@ label{
                 <br>
     <img class="play1" src="images/dice6.png">
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 ">
                 <H2 style="color:red" id="player2">player2</h2>
                 <br>
     <img class="play2" src="images/dice6.png">
             </div>
         </div>
     </div>
-    <button type="button" class="btn btn-success"  onclick="game()" value = "Display";>click me</button>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+    <button type="button" class="btn btn-success"  onclick="game1()" value = "Display";>click me</button>
+</div>
+<div class="col-sm-6">
+    <button type="button" class="btn btn-success"  onclick="game2()" value = "Display";>click me</button>
+</div>
+</div>
+</div>
     <script src="index.js"></script>
 </body>
 </html>
