@@ -28,6 +28,9 @@ label{
     border-left: 6px solid red;
     height:100%;
 }
+*{
+    line-height: 2rem;
+}
 </style>
 
     <title>DICE GAME</title>
@@ -35,41 +38,28 @@ label{
 <body style="background-color:#085E7D">
     <h1>Play Game</h1>
     <div class="container">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <button type="button" class="btn btn-success"  onclick="callname()" value = "Display";>Click For Player1's Name</button>
-                </div>   
-                <div class="col-sm-6">
-                    <button type="button" class="btn btn-success"  onclick="callname2()" value = "Display";>Click For Player2's Name</button>
-                </div>         
-            </div>
-        </div>
         <div class="row">
             
-            <div class="col-sm-6">
-                
+            <div class="col">
+                <button type="button" class="btn btn-success"  onclick="callname()" value = "Display";>Click For Player1's Name</button>
+                <br>
                 <h2 style="color:red" id="player1">player1</h2>
                 <br>
-    <img class="play1" src="images/dice6.png">
+    <img style="width:50%" class="play1" src="images/dice6.png">
+    <br>
+    <button type="button" class="btn btn-success"  onclick="game1()" value = "Display";>click me</button>
             </div>
-            <div class="col-sm-6 ">
+            <div class="col">
+                <button type="button" class="btn btn-success"  onclick="callname2()" value = "Display";>Click For Player2's Name</button>
+                <br>
                 <H2 style="color:red" id="player2">player2</h2>
                 <br>
-    <img class="play2" src="images/dice6.png">
+    <img style="width:50%"; class="play2" src="images/dice6.png">
+    <br>
+    <button type="button" class="btn btn-success"  onclick="game2()" value = "Display";>click me</button>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-    <button type="button" class="btn btn-success"  onclick="game1()" value = "Display";>click me</button>
-</div>
-<div class="col-sm-6">
-    <button type="button" class="btn btn-success"  onclick="game2()" value = "Display";>click me</button>
-</div>
-</div>
-</div>
     <script src="index.js"></script>
 </body>
 </html>
