@@ -26,25 +26,35 @@ label{
     <title>DICE GAME</title>
 </head>
 <body style="background-color:#085E7D">
-    
+
     <div class="container">
-        <h2 style="color:red;text-align:center;">Refresh me</h2>
-        <br>
         <h1>Refresh me</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <button type="button" class="btn btn-success"  onclick="callname()" value = "Display";>player 1 name</button>
+                </div>   
+                <div class="col-sm-6">
+                    <button type="button" class="btn btn-success"  onclick="callname2()" value = "Display";>player 2 name</button>
+                </div>         
+            </div>
+        </div>
         <div class="row">
-            <div class="col-sm-6">
             
-                <label>player1</label>
+            <div class="col-sm-6">
+                
+                <h2 style="color:red" id="player1">player1</h2>
                 <br>
     <img class="play1" src="images/dice6.png">
             </div>
             <div class="col-sm-6">
-                <label>player2</label>
+                <H2 style="color:red" id="player2">player2</h2>
                 <br>
     <img class="play2" src="images/dice6.png">
             </div>
         </div>
     </div>
+    <button type="button" class="btn btn-success"  onclick="game()" value = "Display";>click me</button>
     <script src="index.js"></script>
 </body>
 </html>
