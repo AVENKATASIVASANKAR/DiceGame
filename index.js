@@ -11,15 +11,15 @@ document.querySelector("#player2").innerHTML=name2;
 return result;
 }
 
-function game(){
+function game1(){
 var randomNumber1 = Math.random()*6+1;
 randomNumber1 = Math.floor(randomNumber1);
 var randomDiceimage = "dice"+randomNumber1+".png";
 var randomImagesource = "images/"+randomDiceimage;
 var image1 = document.querySelectorAll("img")[0];
 image1.setAttribute("src",randomImagesource);
-
-
+}
+function game2(){
 var randomNumber2=Math.random()*6+1;
 randomNumber2=Math.floor(randomNumber2);
 var randomDiceimage2="dice"+randomNumber2+".png";
